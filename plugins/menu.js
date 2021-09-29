@@ -40,17 +40,12 @@ const defaultMenu = {
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
-  after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
-`,
+  after: `urmine^0.0.0`,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
